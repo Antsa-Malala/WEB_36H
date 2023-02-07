@@ -6,7 +6,8 @@ class Utilisateur extends CI_Model {
     {
         $data=array();
         $i=0;
-        $query=$this->db->query('SELECT * FROM utilisateur');
+        $sql="SELECT * FROM utilisateur";
+        $query=$this->db->query($sql);
         foreach($query->result_array() as $row)
         {
             $data[$i]=$row;
