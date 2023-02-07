@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Utilisateur extends CI_Model {
+class Utilisateur_Model extends CI_Model {
     public function liste_utilisateur()
     {
         $data=array();
@@ -22,13 +22,14 @@ class Utilisateur extends CI_Model {
         $row=$query->row_array();
         return $row;
     }
-    public function donneeUtilisateur($nom_utilisateur='')
+    public function donneeUtilisateur($idUtilisateur=0)
     {
-        $sql="SELECT * FROM utilisateur where nom_utilisateur=%s";
-        $sql=sprintf($sql,$nom_utilisateur);
+
+        
+        $sql="SELECT * FROM utilisateur where id=%d";
+        $sql=sprintf($sql,$idUtilisateur);
         $query=$this->db->query($sql);
         $row=$query->row_array();
         return $row;
     }
-    
 }

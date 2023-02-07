@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Objet extends CI_Model {
+class Objet_Model extends CI_Model {
     public function liste_objet() {
         $query = $this->db->get('objet');
         return $query->result_array();
@@ -25,7 +25,7 @@ class Objet extends CI_Model {
    
     public function insert_propositon($idUtilisateur1,$idObjet1,$idUtilisateur2,$idObjet2){
         $sql="insert into proposition values(%d,%d,%d,%d)";
-        $sql=sprintf($idUtilisateur1, $idUtilisateur2, $idObjet1, $idObjet2);
+        $sql=sprintf($sql,$idUtilisateur1, $idUtilisateur2, $idObjet1, $idObjet2);
         $this->db->query($sql);
     }
 
@@ -34,5 +34,22 @@ class Objet extends CI_Model {
         return $sql->result_array();
     }
 
-    
+    public function objet_detail($idObjet){
+        $query = $this->db->get_where('objet',array('idObjet' => $idObjet));
+        return $query->row_array();
+    }
+
+    public function insert_Categorie($categorie){
+        $sql="insert into categorie (categorie) values(%s)";
+        $sql=sprintf($sql,$categorie);
+        $this->db->query($sql);
+    }
+
+
+    public function liste_proposition_utilisateur($idUser){
+        $sql = $this->db->get_where('proposition',array('idutilisateur' => $idUser));
+        return $sql->result_array();
+    }
+
+
 }
