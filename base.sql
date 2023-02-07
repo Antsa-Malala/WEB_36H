@@ -48,5 +48,5 @@ create table mouvement(
     idProposition int references proposition(idProposition),
     etat int(10)
 );
-create or replace view vue1 as
-    select *;
+#create or replace view vue1 as
+
