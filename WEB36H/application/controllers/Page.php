@@ -32,4 +32,5 @@ class Page extends CI_Controller {
                 }
                 redirect(base_url('Page/log/'));
         }
+        public 
 }
