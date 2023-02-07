@@ -18,14 +18,7 @@ class Page extends CI_Controller {
         {  
                 $nom_utilisateur=$this->input->post('nom_utilisateur');
                 $mot_de_passe=$this->input->post('mot_de_passe');
-                if($mot_de_passe=="1234"&&$nom_utilisateur=="Antsa")
-                {
-                        redirect(base_url('Page/accueil'));
-                }
-                else{
-                        redirect(base_url('Page/log/'));
-                }
-                /*session_start();
+                session_start();
                 $this->load->model('Utilisateur');
                 $utilisateur=$this->Utilisateur->liste_utilisateur();
                 for($i=0;$i<count($utilisateur);$i++)
@@ -34,9 +27,9 @@ class Page extends CI_Controller {
                         {
                                 $_SESSION['nom_utilisateur']=$nom_utilisateur;
                                 $_SESSION['mot_de_passe']=$mot_de_passe;
-                                redirect(base_url('Page/accueil'));
+                                redirect(base_url('Page/accueil/'));
                         }
                 }
-                redirect(base_url('Page/log/'));*/
+                redirect(base_url('Page/log/'));
         }
 }
