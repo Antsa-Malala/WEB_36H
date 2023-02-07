@@ -23,4 +23,16 @@ class Objet extends CI_Model {
         return $data;
     }
    
+    public function insert_propositon($idUtilisateur1,$idObjet1,$idUtilisateur2,$idObjet2){
+        $sql="insert into proposition values(%d,%d,%d,%d)";
+        $sql=sprintf($idUtilisateur1, $idUtilisateur2, $idObjet1, $idObjet2);
+        $this->db->query($sql);
+    }
+
+    public function objet_utilisateur($iduser){
+        $sql = $this->db->get_where('objet',array('idutilisateur' => $iduser));
+        return $sql->result_array();
+    }
+
+    
 }
