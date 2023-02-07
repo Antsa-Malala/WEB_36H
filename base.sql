@@ -1,5 +1,5 @@
-CREATE DATABASE takalo;
-USE takalo;
+#CREATE DATABASE takalo;
+#USE takalo;
 create table utilisateur
 (
     id              int auto_increment,
@@ -33,4 +33,20 @@ create table objet
     constraint objet__idC_fk
         foreign key (idCategorie) references categorie(id)
 );
-
+create table proposition(
+    idProposition int not null auto_increment primary key,
+    idUtilisateur1 int references utilisateur(id),
+    idUtilisateur2 int references  utilisateur(id),
+    idObjet1 int references objet(id),
+    id0bjet2 int references objet(id)
+);
+create table sary(
+    idObjet int references objet(id),
+    Anarana varchar(100)
+);
+create table mouvement(
+    idProposition int references proposition(idProposition),
+    etat int(10)
+);
+create or replace view vue1 as
+    select *;
