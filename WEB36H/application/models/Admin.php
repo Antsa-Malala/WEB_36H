@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class  extends CI_Model {
+class Admin extends CI_Model {
     public function donneeAdmin()
     {
         $data=array();

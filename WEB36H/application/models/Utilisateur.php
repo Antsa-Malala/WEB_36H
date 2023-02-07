@@ -22,14 +22,13 @@ class Utilisateur extends CI_Model {
         $row=$query->row_array();
         return $row;
     }
-    public function donneeUtilisateur($idUtilisateur=0)
+    public function donneeUtilisateur($nom_utilisateur='')
     {
-
-        
-        $sql="SELECT * FROM utilisateur where id=%d";
-        $sql=sprintf($sql,$idUtilisateur);
+        $sql="SELECT * FROM utilisateur where nom_utilisateur=%s";
+        $sql=sprintf($sql,$nom_utilisateur);
         $query=$this->db->query($sql);
         $row=$query->row_array();
         return $row;
     }
+    
 }

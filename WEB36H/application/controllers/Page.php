@@ -26,6 +26,11 @@ class Page extends CI_Controller {
         {
                 $this->load->view('users');
         }
+        public function deconnexion()
+        {   
+            session_destroy();
+            redirect(base_url("Page/index"));
+        }
         
         
 }
