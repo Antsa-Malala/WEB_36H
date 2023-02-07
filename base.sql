@@ -1,5 +1,5 @@
-#CREATE DATABASE takalo;
-#USE takalo;
+CREATE DATABASE takalo;
+USE takalo;
 create table utilisateur
 (
     id              int auto_increment,
