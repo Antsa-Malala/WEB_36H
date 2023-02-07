@@ -27,10 +27,17 @@ class Page extends CI_Controller {
                         {
                                 $_SESSION['nom_utilisateur']=$nom_utilisateur;
                                 $_SESSION['mot_de_passe']=$mot_de_passe;
-                                redirect(base_url('Page/accueil/'));
+                                if($utilisateur[$i]['estAdmin']==1)
+                                {
+                                        redirect(base_url('Page/accueil?admin=1'));
+                                }
+                                else{
+                                        redirect(base_url('Page/accueil?admin=0'));
+                                }
                         }
                 }
                 redirect(base_url('Page/log/'));
         }
+      
         
 }
