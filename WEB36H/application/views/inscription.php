@@ -26,7 +26,7 @@
   <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"></path>
 </svg>
 </div>
-<form class="text-center" method="post" style="width: 261.8px;height: 253px;">
+<form class="text-center" method="post" style="width: 261.8px;height: 253px;" action="<?php echo base_url("Inscription/inscrire");?>">
 <div class="mb-3">
   <input class="form-control" type="text" name="nom" placeholder="Entrer votre nom" required>
 </div>
@@ -39,8 +39,8 @@
 <div class="mb-3">
 <input class="form-control" type="password" style="position: relative;display: block;overflow: hidden;" placeholder="Entrer votre Mot de Passe" name="mot_de_passe" required>
 </div>
+<button class="btn btn-success" type="submit">S'inscrire</button>
 </form>
-<button class="btn btn-success" type="button">S'inscrire</button>
 </div>
 </div>
 </div>

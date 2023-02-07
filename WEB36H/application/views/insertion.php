@@ -4,79 +4,69 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
-    <link rel="stylesheet" href="<?php echo base_url("assets/assets/bootstrap/css/bootstrap.min.css?h=63c49130f916e8761302328c73ff1917");?>">
+    <title>Pricing - Brand</title>
+    <link rel="stylesheet" href="<?php echo base_url("assets/assets/bootstrap/css/bootstrap.min.css");?>">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
-    <link rel="stylesheet" href="<?php echo base_url("assets/assets/css/Projects-Grid-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8");?>">
+    <link rel="stylesheet" href="<?php echo base_url("assets/assets/css/Features-Large-Icons-icons.css");?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="<?php echo base_url("assets/assets/css/Projects-Grid-Horizontal-images.css");?>">
 </head>
 
-<body style="/*background: url(&quot;design.jpg&quot;);*/background-position: 0 -60px;">
+<body>
     <nav class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H19C19.5523 4 20 4.44771 20 5V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5C4 4.44772 4.44771 4 5 4ZM2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V19C22 20.6569 20.6569 22 19 22H5C3.34315 22 2 20.6569 2 19V5ZM12 12C9.23858 12 7 9.31371 7 6H9C9 8.56606 10.6691 10 12 10C13.3309 10 15 8.56606 15 6H17C17 9.31371 14.7614 12 12 12Z" fill="currentColor"></path>
                     </svg></span><span>Takalo-Takalo</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link active" href="<?php echo base_url("Page/accueil");?>">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Acceuil</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Categories</a></li>
                     <li class="nav-item"><a class="nav-link" href="users.html">Utilisateurs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="insertion.html">Insertion</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="insertion.html">Insertion</a></li>
                     <li class="nav-item"></li>
                     <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">Proposition</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Proposition</a></li>
                 </ul><a class="btn btn-primary shadow" role="button" href="signup.html">Deconnexion</a>
             </div>
         </div>
     </nav>
-    <header class="bg-primary-gradient"></header>
-    <section></section>
-    <section></section>
-    <section class="py-5 mt-5">
-        <div class="container py-4 py-xl-5">
+    <section class="py-5">
+        <div class="container py-5">
             <div class="row mb-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <h2>Takalo-Takalo</h2>
-                    <p class="w-lg-50">Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices.</p>
+                    <h2 class="fw-bold">Insertion Objet</h2>
+                    <p class="text-muted w-lg-50"></p>
                 </div>
             </div>
-            <div class="row gy-4 row-cols-1 row-cols-md-2">
-                <div class="col">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" width="361" height="200"></div>
-                        <div class="py-4 py-lg-0 px-lg-4">
-                            <h4>Produit1</h4>
-                            <p>Description :&nbsp;<br>Prix :<br>Categories :&nbsp; <br>Nom Utilisateur:&nbsp; &nbsp; &nbsp; &nbsp;<br></p><button class="btn btn-primary" type="button">Proposer</button>
+            <section class="position-relative py-4 py-xl-5">
+                <div class="container position-relative">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6 col-lg-5 col-xl-4">
+                            <div>
+                                <form class="p-3 p-xl-4" method="post">
+                                    <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name" placeholder="Nom"></div><input class="form-control" type="text" id="email-1" name="description" placeholder="Description" style="margin: 0px;"><input class="form-control" type="hidden">
+                                    <div class="mb-3"></div><input class="form-control" type="hidden"><input class="form-control" type="hidden"><input class="form-control" type="number" placeholder="Prix" min="0" max="99999999999" name="price">
+                                    <div class="mb-3"></div><input class="form-control" type="hidden">
+                                    <div class="carousel slide" data-bs-ride="carousel" id="carousel-1">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" alt="Slide Image"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" alt="Slide Image"></div>
+                                        </div>
+                                        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="visually-hidden">Next</span></a></div>
+                                        <ol class="carousel-indicators">
+                                            <li data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></li>
+                                            <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
+                                            <li data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
+                                        </ol>
+                                    </div><input class="form-control" type="file">
+                                    <div></div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></div>
-                        <div class="py-4 py-lg-0 px-lg-4">
-                            <h4>Produit2</h4>
-                            <p>Description :&nbsp;<br>Prix :<br>Categories :&nbsp;<br>Nom Utilisateur:&nbsp;<br><br></p><button class="btn btn-primary" type="button">Proposer</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></div>
-                        <div class="py-4 py-lg-0 px-lg-4">
-                            <h4>Produit3</h4>
-                            <p>Description :&nbsp;<br>Prix :<br>Categories :&nbsp;<br>Nom Utilisateur:&nbsp;<br><br></p><button class="btn btn-primary" type="button">Proposer</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></div>
-                        <div class="py-4 py-lg-0 px-lg-4">
-                            <h4>Produit4</h4>
-                            <p>Description :&nbsp;<br>Prix :<br>Categories :&nbsp;<br>Nom Utilisateur:&nbsp;<br><br></p><button class="btn btn-primary" type="button">Proposer</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </div><button class="btn btn-primary" data-aos="fade" type="button" style="width: 219.637px;height: 49.8px;margin: 0px;margin-right: 635px;margin-left: 450px;text-align: center;padding-right: 30px;">Valider Insertion</button>
+            </section>
         </div>
     </section>
     <footer class="bg-primary-gradient">
@@ -84,8 +74,6 @@
             <hr>
             <div class="text-muted d-flex justify-content-between align-items-center pt-3">
                 <p class="mb-0">ETU 001996 Rakotoarison Sitraka</p>
-                <p class="mb-0">ETU 001963 MALALANIRINA Antsa Fitahiana</p>
-                <p class="mb-0">ETU 001975 RABENAIVO Sitraka Ny Avo</p>
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
                             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
@@ -100,9 +88,11 @@
             </div>
         </div>
     </footer>
-    <script src="<?php echo base_url("assets/assets/js/jquery.min.js?h=84e399b8f2181ccd73394fdeddff1638")?>"></script>
-    <script src="<?php echo base_url("assets/assets/bootstrap/js/bootstrap.min.js?h=01bb7ae0c0b11509558f2aa83f244399")?>"></script>
-    <script src="<?php echo base_url("assets/assets/js/bold-and-bright.js?h=914b066f52f5e2b2583e4d1558c90518");?>"></script>
+    <script src="<?php echo base_url("assets/assets/js/jquery.min.js");?>"></script>
+    <script src="<?php echo base_url("assets/assets/bootstrap/js/bootstrap.min.js");?>"></script>
+    <script src="<?php echo base_url("assets/assets/js/bs-init.js");?>"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="<?php echo base_url("assets/assets/js/bold-and-bright.js");?>"></script>
 </body>
 
 </html>

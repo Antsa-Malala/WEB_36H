@@ -4,77 +4,67 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>Projects - Brand</title>
     <link rel="stylesheet" href="<?php echo base_url("assets/assets/bootstrap/css/bootstrap.min.css?h=63c49130f916e8761302328c73ff1917");?>">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="<?php echo base_url("assets/assets/css/Features-Large-Icons-icons.css?h=befd8a398792e305b7ffd4a176b5b585");?>">
     <link rel="stylesheet" href="<?php echo base_url("assets/assets/css/Projects-Grid-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8");?>">
 </head>
 
-<body style="/*background: url(&quot;design.jpg&quot;);*/background-position: 0 -60px;">
+<body>
     <nav class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H19C19.5523 4 20 4.44771 20 5V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5C4 4.44772 4.44771 4 5 4ZM2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V19C22 20.6569 20.6569 22 19 22H5C3.34315 22 2 20.6569 2 19V5ZM12 12C9.23858 12 7 9.31371 7 6H9C9 8.56606 10.6691 10 12 10C13.3309 10 15 8.56606 15 6H17C17 9.31371 14.7614 12 12 12Z" fill="currentColor"></path>
                     </svg></span><span>Takalo-Takalo</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link active" href="<?php echo base_url("Page/accueil");?>">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Acceuil</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Categories</a></li>
-                    <li class="nav-item"><a class="nav-link" href="users.html">Utilisateurs</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="users.html">Utilisateurs</a></li>
                     <li class="nav-item"><a class="nav-link" href="insertion.html">Insertion</a></li>
                     <li class="nav-item"></li>
                     <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">Proposition</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Proposition</a></li>
                 </ul><a class="btn btn-primary shadow" role="button" href="signup.html">Deconnexion</a>
             </div>
         </div>
     </nav>
-    <header class="bg-primary-gradient"></header>
-    <section></section>
-    <section></section>
-    <section class="py-5 mt-5">
+    <section class="py-5">
         <div class="container py-4 py-xl-5">
-            <div class="row mb-5">
-                <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <h2>Takalo-Takalo</h2>
-                    <p class="w-lg-50">Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices.</p>
-                </div>
-            </div>
-            <div class="row gy-4 row-cols-1 row-cols-md-2">
-                <div class="col">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" width="361" height="200"></div>
-                        <div class="py-4 py-lg-0 px-lg-4">
-                            <h4>Produit1</h4>
-                            <p>Description :&nbsp;<br>Prix :<br>Categories :&nbsp; <br>Nom Utilisateur:&nbsp; &nbsp; &nbsp; &nbsp;<br></p><button class="btn btn-primary" type="button">Proposer</button>
+            <div class="row">
+                <div class="col-md-8 col-xl-6 mx-auto p-4">
+                    <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
+                        <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center me-4 d-inline-block bs-icon xl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                <path d="M256 288c79.53 0 144-64.47 144-144s-64.47-144-144-144c-79.52 0-144 64.47-144 144S176.5 288 256 288zM351.1 320H160c-88.36 0-160 71.63-160 160c0 17.67 14.33 32 31.1 32H480c17.67 0 31.1-14.33 31.1-32C512 391.6 440.4 320 351.1 320z"></path>
+                            </svg></div>
+                        <div>
+                            <h4>Anaran'olona</h4>
+                            <p>Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><a href="#"></a>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></div>
-                        <div class="py-4 py-lg-0 px-lg-4">
-                            <h4>Produit2</h4>
-                            <p>Description :&nbsp;<br>Prix :<br>Categories :&nbsp;<br>Nom Utilisateur:&nbsp;<br><br></p><button class="btn btn-primary" type="button">Proposer</button>
+                    </div><a href="#">Leurs Objets&nbsp;</a>
+                    <hr class="my-5">
+                    <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
+                        <div>
+                            <h4>Anaran'olona</h4>
+                            <p>Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><a href="#"></a>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></div>
-                        <div class="py-4 py-lg-0 px-lg-4">
-                            <h4>Produit3</h4>
-                            <p>Description :&nbsp;<br>Prix :<br>Categories :&nbsp;<br>Nom Utilisateur:&nbsp;<br><br></p><button class="btn btn-primary" type="button">Proposer</button>
+                        <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center order-last ms-4 d-inline-block bs-icon xl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                <path d="M256 288c79.53 0 144-64.47 144-144s-64.47-144-144-144c-79.52 0-144 64.47-144 144S176.5 288 256 288zM351.1 320H160c-88.36 0-160 71.63-160 160c0 17.67 14.33 32 31.1 32H480c17.67 0 31.1-14.33 31.1-32C512 391.6 440.4 320 351.1 320z"></path>
+                            </svg></div>
+                    </div><a href="#">Leurs Objets</a>
+                    <hr class="my-5">
+                    <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
+                        <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center me-4 d-inline-block bs-icon xl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                <path d="M256 288c79.53 0 144-64.47 144-144s-64.47-144-144-144c-79.52 0-144 64.47-144 144S176.5 288 256 288zM351.1 320H160c-88.36 0-160 71.63-160 160c0 17.67 14.33 32 31.1 32H480c17.67 0 31.1-14.33 31.1-32C512 391.6 440.4 320 351.1 320z"></path>
+                            </svg></div>
+                        <div>
+                            <h4>Anaran'olona</h4>
+                            <p>Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></div>
-                        <div class="py-4 py-lg-0 px-lg-4">
-                            <h4>Produit4</h4>
-                            <p>Description :&nbsp;<br>Prix :<br>Categories :&nbsp;<br>Nom Utilisateur:&nbsp;<br><br></p><button class="btn btn-primary" type="button">Proposer</button>
-                        </div>
-                    </div>
+                    </div><a href="#">Leurs Objets</a>
                 </div>
             </div>
         </div>
@@ -84,8 +74,6 @@
             <hr>
             <div class="text-muted d-flex justify-content-between align-items-center pt-3">
                 <p class="mb-0">ETU 001996 Rakotoarison Sitraka</p>
-                <p class="mb-0">ETU 001963 MALALANIRINA Antsa Fitahiana</p>
-                <p class="mb-0">ETU 001975 RABENAIVO Sitraka Ny Avo</p>
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
                             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
@@ -100,8 +88,8 @@
             </div>
         </div>
     </footer>
-    <script src="<?php echo base_url("assets/assets/js/jquery.min.js?h=84e399b8f2181ccd73394fdeddff1638")?>"></script>
-    <script src="<?php echo base_url("assets/assets/bootstrap/js/bootstrap.min.js?h=01bb7ae0c0b11509558f2aa83f244399")?>"></script>
+    <script src="<?php echo base_url("assets/assets/js/jquery.min.js?h=84e399b8f2181ccd73394fdeddff1638");?>"></script>
+    <script src="<?php echo base_url("assets/assets/bootstrap/js/bootstrap.min.js?h=01bb7ae0c0b11509558f2aa83f244399");?>"></script>
     <script src="<?php echo base_url("assets/assets/js/bold-and-bright.js?h=914b066f52f5e2b2583e4d1558c90518");?>"></script>
 </body>
 

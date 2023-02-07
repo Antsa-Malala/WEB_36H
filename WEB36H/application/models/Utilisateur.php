@@ -15,5 +15,21 @@ class Utilisateur extends CI_Model {
         }
         return $data;
     }
-   
+    public function donneeAdmin()
+    {
+        $sql="SELECT * FROM utilisateur where estAdmin=1";
+        $query=$this->db->query($sql);
+        $row=$query->row_array();
+        return $row;
+    }
+    public function donneeUtilisateur($idUtilisateur=0)
+    {
+
+        
+        $sql="SELECT * FROM utilisateur where id=%d";
+        $sql=sprintf($sql,$idUtilisateur);
+        $query=$this->db->query($sql);
+        $row=$query->row_array();
+        return $row;
+    }
 }
