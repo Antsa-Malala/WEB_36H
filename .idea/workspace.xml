@@ -6,7 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="7f7aef60-e192-4431-86b7-c99a23e3270a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB36H/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/WEB36H/application/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB36H/application/controllers/Categorie_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/WEB36H/application/controllers/Categorie_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB36H/application/controllers/Objet.php" beforeDir="false" afterPath="$PROJECT_DIR$/WEB36H/application/controllers/Objet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB36H/application/controllers/Profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/WEB36H/application/controllers/Profil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB36H/application/controllers/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/WEB36H/application/controllers/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB36H/application/models/Objet_Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/WEB36H/application/models/Objet_Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB36H/application/views/Objet_categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/WEB36H/application/views/Objet_categorie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB36H/application/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/WEB36H/application/views/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB36H/application/views/profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/WEB36H/application/views/profil1.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +56,7 @@
       <updated>1675796527698</updated>
       <workItem from="1675796527699" duration="5718000" />
       <workItem from="1675826947780" duration="8723000" />
-      <workItem from="1675849369237" duration="7109000" />
+      <workItem from="1675849369237" duration="11419000" />
     </task>
     <servers />
   </component>

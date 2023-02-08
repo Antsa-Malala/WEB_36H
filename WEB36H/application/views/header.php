@@ -9,7 +9,7 @@
                     <li class="nav-item"><a class="nav-link" href="<?php echo base_url("Page/users");?>">Utilisateurs</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?php echo base_url("Page/insertion");?>">Insertion</a></li>
                     <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url("Profil/profil");?>">Mes objets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url("Profil/pro");?>">Mes objets</a></li>
                     <li class="nav-item"><a class="nav-link " href="<?php echo base_url("Page/proposition");?>">Propositions</a></li>
                 </ul><a class="btn btn-primary shadow" role="button" href="<?php echo base_url("Page/deconnexion"); ?>">Deconnexion</a>
             </div>

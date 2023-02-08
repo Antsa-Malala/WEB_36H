@@ -54,6 +54,10 @@ class Objet_Model extends CI_Model {
         $sql=sprintf($sql,$categorie);
         $this->db->query($sql);
     }
+    public function liste_objet_utilisateur($iduser){
+        $sql = $this->db->get_where('objet',array('idutilisateur' => $iduser));
+        return $sql->result_array();
+    }
 
 
     public function liste_proposition_utilisateur($idUser){

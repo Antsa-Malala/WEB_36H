@@ -7,7 +7,7 @@ class Categorie_controller extends CI_Controller {
     {
         $this->load->model('Categorie_Model');
         $adm['categorie']=$this->Categorie_Model->liste_categorie();
-        $this->load->view('profil',$adm);
+        $this->load->view('profil1',$adm);
     }
     public function supprimer()
     {

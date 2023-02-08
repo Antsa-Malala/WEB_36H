@@ -6,7 +6,7 @@ class User extends CI_Controller {
         {
             $this->load->model('Utilisateur');
             $adm['admin']=$this->Utilisateur->donneeUtilisateur(1);
-            $this->load->view('profil',$adm);
+            $this->load->view('profil1',$adm);
         }
 
         

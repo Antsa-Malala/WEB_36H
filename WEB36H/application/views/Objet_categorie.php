@@ -1,17 +1,6 @@
 <?php 
 
-$estAdmin=-1;
-$mot_de_passe="";
-$nom_utilisateur="";
-if(isset($_SESSION['estAdmin'])&&isset($_SESSION['mot_de_passe'])&&isset($_SESSION['nom_utilisateur']))
-{
-    $estAdmin=$_SESSION['estAdmin'];
-    $mot_de_passe=$_SESSION['mot_de_passe'];
-    $nom_utilisateur=$_SESSION['nom_utilisateur'];
-}
-else{
-    redirect(base_url("Page/deconnexion"));
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
