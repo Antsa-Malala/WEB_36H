@@ -12,6 +12,10 @@ class Categorie_Model extends CI_Model {
         $sql=sprintf($sql,$idCategorie);
         $this->db->query($sql);
     }
-   
+    public function insert_Categorie($categorie){
+        $sql="insert into categorie(categorie) values('%s')";
+        $sql=sprintf($sql,$categorie);
+        $this->db->query($sql);
+    }
    
 }

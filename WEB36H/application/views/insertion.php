@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Pricing - Brand</title>
+    <title>Insertion Objet</title>
     <link rel="stylesheet" href="<?php echo base_url("assets/assets/bootstrap/css/bootstrap.min.css");?>">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="<?php echo base_url("assets/assets/css/Features-Large-Icons-icons.css");?>">
@@ -27,9 +27,8 @@
                     <div class="row d-flex justify-content-center">
                         <div class="col-md-6 col-lg-5 col-xl-4">
                             <div>
-                                <form class="p-3 p-xl-4" method="post">
-                                    <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name" placeholder="Nom"></div><input class="form-control" type="text" id="email-1" name="description" placeholder="Description" style="margin: 0px;"><input class="form-control" type="hidden">
-                                    <div class="mb-3"></div><input class="form-control" type="hidden"><input class="form-control" type="hidden"><input class="form-control" type="number" placeholder="Prix" min="0" max="99999999999" name="price">
+                                <form class="p-3 p-xl-4" method="post" action="<?php echo base_url("Objet/insertion_objet/");?>">
+                                    <div class="mb-3"><input class="form-control" type="text" id="name-1" name="nom" placeholder="Nom"></div><input class="form-control" type="text" id="email-1" name="description" placeholder="Description" style="margin: 0px;">            <div class="mb-3"></div><input class="form-control" type="number" placeholder="Prix Estimatif" min="0" max="99999999999" name="prix">
                                     <div class="mb-3"></div><input class="form-control" type="hidden">
                                     <div class="carousel slide" data-bs-ride="carousel" id="carousel-1">
                                         <div class="carousel-inner">
@@ -44,12 +43,13 @@
                                             <li data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
                                         </ol>
                                     </div><input class="form-control" type="file">
-                                    <div></div>
+                                    <button class="btn btn-primary" data-aos="fade" type="button" style="width: 219.637px;height: 49.8px;margin: 0px;margin-right: 635px;margin-left: 450px;text-align: center;padding-right: 30px;">Inserer</button>
+
                                 </form>
                             </div>
                         </div>
                     </div>
-                </div><button class="btn btn-primary" data-aos="fade" type="button" style="width: 219.637px;height: 49.8px;margin: 0px;margin-right: 635px;margin-left: 450px;text-align: center;padding-right: 30px;">Valider Insertion</button>
+                </div>
             </section>
         </div>
     </section>

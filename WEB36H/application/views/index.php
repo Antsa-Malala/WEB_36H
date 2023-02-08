@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Inscription</title>
+    <title>Connexion</title>
     <link rel="stylesheet" href="<?php echo base_url("assets/assets/bootstrap/css/bootstrap.min.css?h=f1a8fe9e98944b9d682ec5c3efac8f17"); ?>">
     <link rel="stylesheet" href="<?php echo base_url("assets/assets/css/Login-Form-Basic-icons.css?h=befd8a398792e305b7ffd4a176b5b585"); ?>">
   </head>

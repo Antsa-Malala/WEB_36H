@@ -5,9 +5,35 @@ class Proposition_controller extends CI_Controller {
 	
     public function proposition($idObjet)
     {
+        $data=array();
+        $idproposition=array();
+        $utilisateur1=array();
+        $utilisateur2=array();
+        $objet1=array();
+        $objet2=array();
+        session_start();
         $this->load->model('Proposition_Model');
-        $adm['proposition']=$this->Proposition_Model->liste_proposition_objet($idObjet);
-        $this->load->view('proposition',$adm);
+        $this->load->model('Objet_Model');
+        $this->load->model('Utilisateur');
+        $donnee=$this->Utilisateur->donneeUtilisateur($_SESSION['nom_utilisateur']);
+        $objet=$this->Proposition_Model->liste_proposition_objet($idObjet);
+        for($i=0;$i<count($objet);$i++)
+        {
+                $idproposition[$i]=$objet[$i]['idProposition'];
+                $utilisateur1[$i]=$this->Utilisateur->donneeUtilisateurId($objet[$i]['idUtilisateur1']);
+                $utilisateur2[$i]=$this->Utilisateur->donneeUtilisateurId($objet[$i]['idUtilisateur2']);
+                $objet1[$i]=$this->Objet_Model->donneeObjetId($objet[$i]['idObjet1']);
+                $objet2[$i]=$this->Objet_Model->donneeObjetId($objet[$i]['idObjet2']);
+
+        }
+        $data=array(
+                'idproposition'=>$idproposition,
+                'utilisateur1'=>$utilisateur1,
+                'utilisateur2'=>$utilisateur2,
+                'objet1'=>$objet1,
+                'objet2'=>$objet2
+        );
+        $this->load->view('proposition',$data);
     }
     public function validation()
     {

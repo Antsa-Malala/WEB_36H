@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Contacts - Brand</title>
+    <title>Mes objets</title>
     <link rel="stylesheet" href="<?php echo base_url("assets/assets/bootstrap/css/bootstrap.min.css"); ?>">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="<?php echo base_url("assets/assets/css/Features-Large-Icons-icons.css"); ?>">
@@ -29,9 +29,9 @@
                     <div class="card-body p-4">
                     <h4 class="card-title"><?php echo $objet[$i]['nom']?></h4>
                     <p>Description : <?php echo $objet[$i]['description']?> </p>
-                    <p>Prix : Ar <?php echo $objet[$i]['prix']?> </p>
+                    <p>Prix Estimatif : Ar <?php echo $objet[$i]['prix']?> </p>
                     </div>
-                    </div><button class="btn btn-primary" type="button">Proposition</button><button class="btn btn-primary" type="button">Modifier</button>
+                    </div><a href="<?php echo base_url("Proposition_controller/proposition"); echo "/".$objet[$i]['id']?>"><button class="btn btn-primary" type="button">Propositions recues</button></a>
                     </div>
                 <?php }?>
                

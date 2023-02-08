@@ -1,4 +1,5 @@
 <?php 
+
 $estAdmin=-1;
 $mot_de_passe="";
 $nom_utilisateur="";
@@ -17,7 +18,7 @@ else{
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Mes propositions</title>
+    <title>Objet par categorie</title>
     <link rel="stylesheet" href="<?php echo base_url("assets/assets/bootstrap/css/bootstrap.min.css?h=63c49130f916e8761302328c73ff1917");?>">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="<?php echo base_url("assets/assets/css/Projects-Grid-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8");?>">
@@ -41,7 +42,7 @@ else{
                         <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" width="361" height="200"></div>
                         <div class="py-4 py-lg-0 px-lg-4">
                             <h4><?php echo $zavatra[$i]['nom'];?></h4>
-                            <p><?php echo $zavatra[$i]['description'];?>&nbsp;<br>Prix Estimatif : <?php echo $zavatra[$i]['prix'];?>&nbsp; &nbsp; &nbsp; &nbsp;<br></p><a href="<?php echo base_url("Proposition_controller/insertion_proposition");?>?user=<?php echo $idUtilisateur;?>&id1=<?php echo $id;?>&id2=<?php echo $zavatra[$i]['id'];?>"><button class="btn btn-primary" type="button">Valider</button></a>
+                            <p><?php echo $zavatra[$i]['description'];?>&nbsp;<br>Prix Estimatif : <?php echo $zavatra[$i]['prix'];?><br></p><a href="<?php echo base_url("Page/mes_proposition");?>?p=<?php echo $zavatra[$i]['prix'];?>&id=<?php echo $zavatra[$i]['id'];?>&user=<?php echo $zavatra[$i]['idUtilisateur']; ?>"><button class="btn btn-primary" type="button">Proposer</button></a>
                         </div>
                     </div>
                 </div>

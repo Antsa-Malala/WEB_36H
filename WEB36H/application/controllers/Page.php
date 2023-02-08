@@ -20,10 +20,17 @@ class Page extends CI_Controller {
                 $objet['categorie']=$this->Categorie_Model->liste_categorie();
                 $this->load->view('categories',$objet);
         }
+        public function objet_categorie()
+        {
+                $this->load->model('Categorie_Model');
+                $objet['categorie']=$this->Categorie_Model->liste_categorie();
+                $this->load->view('categories',$objet);
+        }
         public function accueil()
         {
+                session_start();
                 $this->load->model('Objet_Model');
-                $objet['zavatra']=$this->Objet_Model->liste_object();
+                $objet['zavatra']=$this->Objet_Model->liste_object($_SESSION['nom_utilisateur']);
                 $this->load->view('accueil',$objet);
         }
         public function insertion()

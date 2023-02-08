@@ -15,6 +15,28 @@ class Objet extends CI_Controller {
         $adm['object']=$this->Objet_Model->liste_objet_categorie($idcategorie);
         $this->load->view('profil',$adm);
     }
+    public function liste_objet_client($idUtilisateur)
+    {
+        $this->load->model('Objet_Model');
+        $objet['zavatra']=$this->Objet_Model->liste_objet_categorie($idcategorie,$donnee['id']);
+        $this->load->view('Objet_categorie',$objet);  
+    }
+    public function liste_objet_utilisateur($idutilisateur)
+    {
+        $this->load->model('Objet_Model');
+        $objet['zavatra']=$this->Objet_Model->liste_objet_utilisateur($idutilisateur);
+        $this->load->view('Objet_categorie',$objet);  
+    }
+    public function liste_proposition_objet($idobjet)
+    {
+        $this->load->model('Objet_Model');
+        $objet['zavatra']=$this->Objet_Model->liste_proposition_objet($idobjet);
+        $this->load->view('Objet_categorie',$objet);  
+    }
+    public function insertion_objet()
+    {
+        
+    }
 
         
 }

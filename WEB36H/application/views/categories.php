@@ -12,13 +12,13 @@ if(isset($_SESSION['estAdmin'])&&isset($_SESSION['mot_de_passe'])&&isset($_SESSI
     $nom_utilisateur=$_SESSION['nom_utilisateur'];
 }
 else{
-    redirect(base_url("Page/deconnexion"));
+    //redirect(base_url("Page/deconnexion"));
 }
 ?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Services</title>
+    <title>Categories</title>
     <link rel="stylesheet" href="<?php echo base_url("assets/assets/bootstrap/css/bootstrap.min.css"); ?>">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="<?php echo base_url("assets/assets/fonts/fontawesome-all.min.css"); ?>">
@@ -48,15 +48,15 @@ else{
                         </svg></div>
                         <div class="px-2">
                         <h5 class="mb-0 mt-1"></h5>
-                        </div><a href="#"><?php echo $categorie[$i]['categorie'];?></a>
+                        </div><a href="<?php echo base_url("Categorie_controller/liste_objet_categorie"); echo "/".$categorie[$i]['id']?>"><?php echo $categorie[$i]['categorie'];?></a>
                     </div>
                     </div>
                 <?php } ?>
             </div>
             <?php if($estAdmin==1){?>
-                <form action="" method="post">
-                <input class="border rounded border-1 border-dark" type="text" placeholder="Details" name="text" style="width: 298px;height: 44.6px;margin: 15px;transform: perspective(0px);--bs-body-bg: #6e6e6e;text-align: left;"><button class="btn btn-dark" type="button">Ajouter</button>
-
+            <form action="<?php echo base_url("Categorie_controller/ajout_categorie");?>" method="post">
+                <input class="border rounded border-1 border-dark" type="text" placeholder="Details" name="cate" style="width: 298px;height: 44.6px;margin: 15px;transform: perspective(0px);--bs-body-bg: #6e6e6e;text-align: left;"><button class="btn btn-dark" type="submit">Ajouter</button>
+            </form>
             <?php }?>
         </div>
     </section>
