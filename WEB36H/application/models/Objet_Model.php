@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Objet_Model extends CI_Model {
     public function liste_object() {
-        $sql="SELECT * FROM (select objet.id,objet.nom,objet.prix,objet.description,utilisateur.id as idUtilisateur,utilisateur.prenom,Categorie.categorie from objet join utilisateur on objet.idUtilisateur=utilisateur.id join categorie on categorie.id=objet.idCategorie) as table1";
+        $sql="SELECT * FROM (select objet.id,objet.nom,objet.prix,objet.description,utilisateur.id as idUtilisateur,utilisateur.prenom,categorie.categorie from objet join utilisateur on objet.idUtilisateur=utilisateur.id join categorie on categorie.id=objet.idCategorie) as table1";
         $query = $this->db->query($sql);
         return $query->result_array();
     }
