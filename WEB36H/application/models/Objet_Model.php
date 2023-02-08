@@ -48,6 +48,21 @@ class Objet_Model extends CI_Model {
         $row=$query->row_array();
         return $row;
     }
+
+    public function insert_Categorie($categorie){
+        $sql="insert into categorie (categorie) values(%s)";
+        $sql=sprintf($sql,$categorie);
+        $this->db->query($sql);
+    }
+
+
+    public function liste_proposition_utilisateur($idUser){
+        $sql = $this->db->get_where('proposition',array('idutilisateur' => $idUser));
+        return $sql->result_array();
+        
+    }
+
+
     
    
 }
