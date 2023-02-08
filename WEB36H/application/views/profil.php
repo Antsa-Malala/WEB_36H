@@ -11,37 +11,30 @@
     <link rel="stylesheet" href="<?php echo base_url("assets/assets/css/Projects-Grid-Horizontal-images.css")?>">
 </head>
 <body style="/*background: url(&quot;design.jpg&quot;);*/background-position: 0 -60px;">
-<?php echo $admin['nom'];?>
+
 <?php $this->load->view('header'); ?>
     <section class="py-5">
         <div class="container py-4 py-xl-5">
             <div class="row mb-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <h2>Anaran'olona</h2>
+                    <h2><?php echo $nom;?></h2>
                 </div>
             </div>
             <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
-                <div class="col">
+                <?php for($i=0;$i<count($objet);$i++)
+                { ?>
+
+                    <div class="col">
                     <div class="card">
-                        <div class="card-body p-4">
-                            <h4 class="card-title">Nom Objet</h4><img>
-                        </div>
+                    <div class="card-body p-4">
+                    <h4 class="card-title"><?php echo $objet[$i]['nom']?></h4>
+                    <p>Description : <?php echo $objet[$i]['description']?> </p>
+                    <p>Prix : Ar <?php echo $objet[$i]['prix']?> </p>
+                    </div>
                     </div><button class="btn btn-primary" type="button">Proposition</button><button class="btn btn-primary" type="button">Modifier</button>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body p-4">
-                            <h4 class="card-title">Nom Objet</h4><img>
-                        </div>
-                    </div><button class="btn btn-primary" type="button">Proposition</button><button class="btn btn-primary" type="button">Modifier</button>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body p-4">
-                            <h4 class="card-title">Nom Objet</h4><img>
-                        </div>
-                    </div><button class="btn btn-primary" type="button">Proposition</button><button class="btn btn-primary" type="button">Modifier</button>
-                </div>
+                    </div>
+                <?php }?>
+               
             </div>
         </div>
     </section>

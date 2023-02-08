@@ -4,14 +4,14 @@
                     </svg></span><span>Takalo-Takalo</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link active" href="<?php echo base_url("Page/accueil");?>">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url("services.html");?>">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link " href="<?php echo base_url("Page/accueil");?>">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url("Page/categorie");?>">Categories</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?php echo base_url("Page/users");?>">Utilisateurs</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?php echo base_url("Page/insertion");?>">Insertion</a></li>
                     <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url("Profil/profil");?>">Profil</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="<?php echo base_url("Proposition.html");?>">Propositions</a></li>
-                </ul><a class="btn btn-primary shadow" role="button" href="Page/deconnexion">Deconnexion</a>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url("Profil/profil");?>">Mes objets</a></li>
+                    <li class="nav-item"><a class="nav-link " href="<?php echo base_url("Page/proposition");?>">Propositions</a></li>
+                </ul><a class="btn btn-primary shadow" role="button" href="<?php echo base_url("Page/deconnexion"); ?>">Deconnexion</a>
             </div>
         </div>
     </nav>
