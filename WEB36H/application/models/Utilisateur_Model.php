@@ -39,5 +39,5 @@ class Utilisateur_Model extends CI_Model {
         $row=$query->row_array();
         return $row;
     }
-
+    
 }
