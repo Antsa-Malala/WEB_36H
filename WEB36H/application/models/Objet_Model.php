@@ -62,7 +62,12 @@ class Objet_Model extends CI_Model {
         
     }
 
-
+    public function search($idcategorie,$cle){
+        $sql="SELECT * FROM objet where idCategorie=%d and nom like %%s%";
+        $sql=sprintf($sql,$idcategorie,$cle);
+        $query=$this->db->query($sql);
+        return $query->result_array();
+    }
     
-   
+
 }
