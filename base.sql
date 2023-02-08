@@ -77,10 +77,4 @@ VALUES
 (2, 1), 
 (3, 2);
 
-<<<<<<< HEAD
-=======
-CREATE or replace VIEW objet_donnee AS select objet.id,objet.nom,objet.prix,objet.description,utilisateur.id as idUtilisateur,utilisateur.prenom,Categorie.categorie from objet join utilisateur on objet.idUtilisateur=utilisateur.id join categorie on categorie.id=objet.idCategorie;
-CREATE VIEW mouvement_proposition AS select * from mouvement join proposition on mouvement.idProposition=proposition.id;
->>>>>>> cb5e16ea4bc901df590fbdb45089eb9a8190a0d7
-
 

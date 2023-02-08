@@ -39,5 +39,10 @@ class Utilisateur_Model extends CI_Model {
         $row=$query->row_array();
         return $row;
     }
-
+    public function nbEchange(){
+        $sql="SELECT COUNT(*) FROM mouvement where etat=1";
+        $query=$this->db->query($sql);
+        $row=$query->row_array();
+        return $row;
+    }
 }
