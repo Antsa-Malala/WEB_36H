@@ -32,4 +32,12 @@ class Utilisateur_Model extends CI_Model {
         $row=$query->row_array();
         return $row;
     }
+    public function nbUser()
+    {
+        $sql="SELECT COUNT(*) FROM utilisateur where estAdmin=0";
+        $query=$this->db->query($sql);
+        $row=$query->row_array();
+        return $row;
+    }
+
 }
