@@ -28,10 +28,9 @@ class Proposition_Model extends CI_Model {
     $rqt="INSERT INTO mouvement VALUES (%d,1)";
     $rqt=sprintf($rqt,$idProposition);
     $this->db->query($rqt);
-   }
+}
     public function refuser($idProposition)
    {
-
     $rqt="INSERT INTO mouvement VALUES (%d,0)";
     $rqt=sprintf($rqt,$idProposition);
     $this->db->query($rqt);
@@ -44,12 +43,16 @@ class Proposition_Model extends CI_Model {
    } 
 
     public function liste_proposition_utilisateur1($idUser){
-        $sql = $this->db->get_where('proposition',array('idutilisateur1' => $idUser));
-        return $sql->result_array();
+        $sql="SELECT * FROM proposition where idUtilisateur1=%d and idProposition not in (select idProposition from mouvement)";
+        $sql=sprintf($sql,$idUser);
+        $query=$this->db->query($sql);
+        return $query->result_array();
     } 
     public function liste_proposition_utilisateur2($idUser){
-        $sql = $this->db->get_where('proposition',array('idutilisateur2' => $idUser));
-        return $sql->result_array();
+        $sql="SELECT * FROM proposition where idUtilisateur2=%d and idProposition not in (select idProposition from mouvement)";
+        $sql=sprintf($sql,$idUser);
+        $query=$this->db->query($sql);
+        return $query->result_array();
     } 
    public function liste_reponse_proposition($idUtilisateur)
    {

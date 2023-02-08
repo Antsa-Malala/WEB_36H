@@ -47,6 +47,7 @@ class Page extends CI_Controller {
         public function proposition()
         {
                 $data=array();
+                $idproposition=array();
                 $utilisateur1=array();
                 $utilisateur2=array();
                 $objet1=array();
@@ -59,6 +60,7 @@ class Page extends CI_Controller {
                 $objet=$this->Proposition_Model->liste_proposition_utilisateur1($donnee['id']);
                 for($i=0;$i<count($objet);$i++)
                 {
+                        $idproposition[$i]=$objet[$i]['idProposition'];
                         $utilisateur1[$i]=$this->Utilisateur->donneeUtilisateurId($objet[$i]['idUtilisateur1']);
                         $utilisateur2[$i]=$this->Utilisateur->donneeUtilisateurId($objet[$i]['idUtilisateur2']);
                         $objet1[$i]=$this->Objet_Model->donneeObjetId($objet[$i]['idObjet1']);
@@ -66,6 +68,7 @@ class Page extends CI_Controller {
 
                 }
                 $data=array(
+                        'idproposition'=>$idproposition,
                         'utilisateur1'=>$utilisateur1,
                         'utilisateur2'=>$utilisateur2,
                         'objet1'=>$objet1,
