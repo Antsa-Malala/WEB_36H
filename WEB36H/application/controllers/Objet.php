@@ -33,10 +33,6 @@ class Objet extends CI_Controller {
         $objet['zavatra']=$this->Objet_Model->liste_proposition_objet($idobjet);
         $this->load->view('Objet_categorie',$objet);  
     }
-    public function insertion_objet()
-    {
-        
-    }
 
         
 }
