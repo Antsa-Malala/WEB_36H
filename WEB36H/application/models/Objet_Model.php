@@ -68,6 +68,21 @@ class Objet_Model extends CI_Model {
         $query=$this->db->query($sql);
         return $query->result_array();
     }
-    
+    public function liste_proposition_objet_marge($prix=0,$marge)
+    {
+        $data=array();
+        $i=0;
+        $prixinf=$prix-($prix*($marge)/100);
+        $prixsup=$prix+($prix*($marge)/100);
+        $sql="SELECT * FROM objet where prix<=%d and prix>=%d";
+        $sql=sprintf($sql,$prixinf,$prixsup);
+        $query=$this->db->query($sql);
+        foreach($query->result_array() as $row)
+        {
+            $data[$i]=$row;
+            $i++;
+        }
+        return $data;
+    }
 
 }

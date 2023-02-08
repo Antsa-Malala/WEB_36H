@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f7aef60-e192-4431-86b7-c99a23e3270a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB36H/application/models/Objet_Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/WEB36H/application/models/Objet_Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB36H/application/models/Utilisateur_Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/WEB36H/application/models/Utilisateur_Model.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +47,7 @@
       <updated>1675796527698</updated>
       <workItem from="1675796527699" duration="5718000" />
       <workItem from="1675826947780" duration="8723000" />
+      <workItem from="1675849369237" duration="912000" />
     </task>
     <servers />
   </component>
