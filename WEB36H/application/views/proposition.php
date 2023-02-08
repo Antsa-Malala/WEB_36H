@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>Home </title>
     <link rel="stylesheet" href="<?php echo base_url("assets/assets/bootstrap/css/bootstrap.min.css");?>">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="<?php echo base_url("assets/assets/fonts/fontawesome-all.min.css");?>">
@@ -35,8 +35,8 @@
                             <p>Votre objet : <?php echo $objet1[$i]['nom'] ?>&nbsp;<br>Prix : <?php echo $objet1[$i]['prix'] ?><br></p>
                             <h4>L'échangeur : <?php echo $utilisateur2[$i]['nom'];?> <?php echo $utilisateur2[$i]['prenom'];?></h4>
                             <p>Objet à échanger: <?php echo $objet2[$i]['nom'] ?>&nbsp;<br>Prix : <?php echo $objet2[$i]['prix'] ?><br></p>
-                            <a href=""><p>Valider</p></a>
-                            <a href=""><p>Refuser</p></a>
+                            <a href="<?php echo base_url("Proposition_controller/validation");?>?id=<?php echo $idproposition[$i]; ?>"><p>Valider</p></a>
+                            <a href="<?php echo base_url("Proposition_controller/refus");?>?id=<?php echo $idproposition[$i]; ?>"><p>Refuser</p></a>
                         </div>
                     </div>
                 </div>

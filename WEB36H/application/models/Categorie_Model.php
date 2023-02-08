@@ -6,6 +6,12 @@ class Categorie_Model extends CI_Model {
         $query = $this->db->get('categorie');
         return $query->result_array();
     }
+    public function supprimer_categorie($idCategorie)
+    {
+        $sql="DELETE FROM categorie WHERE id=%d ON DELETE CASCADE";
+        $sql=sprintf($sql,$idCategorie);
+        $this->db->query($sql);
+    }
    
    
 }

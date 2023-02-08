@@ -9,6 +9,20 @@ class Proposition_controller extends CI_Controller {
         $adm['proposition']=$this->Proposition_Model->liste_proposition_objet($idObjet);
         $this->load->view('proposition',$adm);
     }
+    public function validation()
+    {
+        $idProposition=$this->input->get('id');
+        $this->load->model('Proposition_Model');
+        $adm['proposition']=$this->Proposition_Model->valider($idProposition);
+        redirect(base_url("Page/proposition"));
+    }
+    public function refus()
+    {
+        $idProposition=$this->input->get('id');
+        $this->load->model('Proposition_Model');
+        $adm['proposition']=$this->Proposition_Model->refuser($idProposition);
+        redirect(base_url("Page/proposition"));
+    }
     public function insertion_proposition()
     {
         $this->load->model('Utilisateur');
