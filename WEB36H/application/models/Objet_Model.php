@@ -67,7 +67,6 @@ class Objet_Model extends CI_Model {
         $sql=sprintf($sql,$idcategorie,$cle);
         $query=$this->db->query($sql);
         return $query->result_array();
-        
     }
     public function liste_proposition_objet_marge($prix=0,$marge)
     {
