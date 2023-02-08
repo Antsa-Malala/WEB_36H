@@ -79,3 +79,7 @@ VALUES
 (2, 1), 
 (3, 2);
 
+CREATE VIEW objet_donnee AS select objet.id,objet.nom,objet.prix,objet.description,utilisateur.id as idUtilisateur,utilisateur.prenom,Categorie.categorie from objet join utilisateur on objet.idUtilisateur=utilisateur.id join categorie on categorie.id=objet.idCategorie;
+CREATE VIEW mouvement_proposition AS select * from mouvement join proposition on mouvement.idProposition=proposition.id;
+
+

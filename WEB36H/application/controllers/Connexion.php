@@ -18,10 +18,12 @@ class Connexion extends CI_Controller {
                                 $_SESSION['mot_de_passe']=$mot_de_passe;
                                 if($utilisateur[$i]['estAdmin']==1)
                                 {
-                                        redirect(base_url('Page/accueil?admin=1'));
+                                    $_SESSION['estAdmin']=1;
+                                    redirect(base_url('Page/accueil'));
                                 }
                                 else{
-                                        redirect(base_url('Page/accueil?admin=0'));
+                                    $_SESSION['estAdmin']=0;
+                                    redirect(base_url('Page/accueil'));
                                 }
                         }
                 }
